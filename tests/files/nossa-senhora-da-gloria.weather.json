@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": -37.42,
+        "lat": -10.2189
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 293.71,
+        "feels_like": 294.09,
+        "temp_min": 293.71,
+        "temp_max": 293.71,
+        "pressure": 1017,
+        "humidity": 87,
+        "sea_level": 1017,
+        "grnd_level": 983
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 144,
+        "gust": 8.39
+    },
+    "clouds": {
+        "all": 12
+    },
+    "dt": 1695077852,
+    "sys": {
+        "country": "BR",
+        "sunrise": 1695025324,
+        "sunset": 1695068760
+    },
+    "timezone": -10800,
+    "id": 3456240,
+    "name": "Nossa Senhora da Glória",
+    "cod": 200
+}
