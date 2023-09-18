@@ -8,7 +8,7 @@ class PokemonService
 {
     protected mixed $client;
 
-    public function handle(string $city)
+    public function handle()
     {
         $request = Http::pokeapi()
             ->get('/')
