@@ -20,5 +20,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Http::macro('weather', function () {
+            return Http::baseUrl('https://api.openweathermap.org/data/2.5/weather');
+        });
+
+        Http::macro('pokeapi', function () {
+            return Http::baseUrl('https://pokeapi.co/api/v2');
+        });
+
     }
+
 }
