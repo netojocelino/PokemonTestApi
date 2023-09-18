@@ -26,10 +26,20 @@ class WeatherService
             ->getContents();
 
         $result = json_decode($request, true);
+
+        return $this->setResponse($result);
+    }
+
+    public function setResponse(array $data)
+    {
+        if ($data['cod'] != '200') {
+            return $data;
+        }
+
         $response = [
-            'weathers'    => array_column($result['weather'], 'main'),
-            'temperature' => $result['main']['temp'],
-            'name'        => $result['name'],
+            'weathers'    => array_column($data['weather'], 'main'),
+            'temperature' => $data['main']['temp'],
+            'name'        => $data['name'],
         ];
         $response['is_raining'] = in_array('rain', $response['weathers']);
 
