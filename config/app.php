@@ -18,6 +18,10 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'keys' => [
+        'weather' => env('WEATHER_KEY')
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
