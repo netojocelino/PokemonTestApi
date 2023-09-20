@@ -44,7 +44,7 @@ class PokemonService
 
         $result = json_decode($request, true)['pokemon'];
 
-        if ($unique) return $result[ random_int(0, count($result)) ];
+        if ($unique) return $result[ random_int(0, count($result) - 1) ]['pokemon'];
 
         return $result;
     }
